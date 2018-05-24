@@ -1,0 +1,17 @@
+[user]
+	name = Tom Lee
+	email = win981026@gmail.com
+[credential]
+	helper = cache --timeout=99999999
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log HEAD -1
+	pop = reset --soft HEAD^
+	wipe = reset --hard HEAD^
+[push]
+	default = simple
+[fetch]
+	prune = true
