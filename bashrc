@@ -1,11 +1,12 @@
-# export PS1="\u \w \$(git branch 2>/dev/null | sed -n "s/* \(.*\)/\1 /p")$ " 
+# export PS1="\u \w \$(git branch 2>/dev/null | sed -n "s/* \(.*\)/\1 /p")$ "
 
 # aliases
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 alias ls='ls -G'
-alias grep='grep -rnIi --color'
+alias grep='grep --color=auto'
+alias eyeout="cd ~/Github/FreeEyeOut; source venv/bin/activate; while true; clear  && printf '\e[3J'; date; do scrapy crawl FreeShittyEyeOut; sleep 30; done"
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
