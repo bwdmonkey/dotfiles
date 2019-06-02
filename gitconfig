@@ -10,8 +10,11 @@
 	st = status
 	last = log HEAD -1
 	pop = reset --soft HEAD^
-	wipe = reset --hard HEAD^
+	wipe = reset --hard HEAD
+  pub = push -u origin HEAD
 [push]
 	default = simple
 [fetch]
 	prune = true
+[core]
+	editor = /usr/bin/vim
